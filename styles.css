@@ -322,6 +322,10 @@ main {
   z-index: 0;
 }
 
+.btn-yt {
+  display: none;
+}
+
 footer {
   background-color: #1f1714;
   color: #f1f1f1;
@@ -596,6 +600,7 @@ footer {
   }
 
   .btn-yt {
+    display: block;
     text-align: center;
     margin: 2rem 0;
     width: 200px;
@@ -606,6 +611,7 @@ footer {
     border-radius: 3px;
     font-size: 1rem;
     cursor: pointer;
+    z-index: 10;
   }
 
   .btn-yt:hover {
