@@ -461,28 +461,32 @@ footer {
   }
 
   .ul-nav {
-    position: absolute;
-    top: 4.3rem;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.97);
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem 0;
-    transform: translateY(-200%);
-    transition: transform 0.4s ease;
-    z-index: 100;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.97);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+  z-index: 10005;
+  overflow-y: auto;
+}
 
-  .ul-nav.active {
-    transform: translateY(0);
-  }
+.ul-nav.active {
+  transform: translateY(0);
+}
 
-  .ul-nav li a {
-    font-size: 1.1rem;
-    font-weight: 400;
-  }
+.ul-nav li a {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
 
   .menu-toggle.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
