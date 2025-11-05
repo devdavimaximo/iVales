@@ -650,3 +650,211 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+
+@media (min-width: 420px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 0.7rem 1rem;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .ul-nav {
+    position: absolute;
+    top: 4.3rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.97);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    transform: translateY(-200%);
+    transition: transform 0.4s ease;
+    z-index: 100;
+  }
+
+  .ul-nav.active {
+    transform: translateY(0);
+  }
+
+  .ul-nav li a {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .video-church {
+    height: 100vh;
+  }
+
+  .btn-video {
+    flex-direction: column;
+    gap: 1rem;
+    top: 80%;
+  }
+
+  .btn-video a {
+    font-size: 0.9rem;
+    padding: 0.8rem 0;
+  }
+
+  .verse {
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .verse-text h2 {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+
+  .verse-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .logo-element {
+    width: 150px;
+    position: absolute;
+    opacity: 0.05;
+  }
+
+  .location {
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .img-drone {
+    margin: 1rem 1rem;
+    width: 90%;
+    height: auto;
+  }
+
+  .container-img-drone p {
+    font-size: 0.9rem;
+  }
+
+  .address h1 {
+    font-size: 2.3rem;
+    margin: 2.5rem 0 2rem 0;
+  }
+
+  .address p {
+    font-size: 0.9rem;
+    margin: 0.5rem 5rem;
+    border-bottom: 1px solid #c2a58c;
+    text-align: justify;
+    width: 80%;
+  }
+
+  .youtube {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .logo-transparente {
+    display: none;
+  }
+
+  .container-youtube h1 {
+    margin: 3rem 0 0.3rem;
+    font-size: 2rem;
+  }
+
+  .container-youtube p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .youtube-desktop {
+    display: none;
+  }
+
+  .youtube-celular {
+    display: block;
+    width: 90%;
+    height: 350px;
+  }
+
+  .click-img,
+  .youtube-click {
+    display: none;
+  }
+
+  .element-youtube {
+    display: none;
+  }
+
+  .btn-yt {
+    text-align: center;
+    margin: 2rem 0;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn-yt:hover {
+    transition: 0.3s;
+    border: 2px solid #b8b6b6;
+    color: #f1f1f1;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-address p {
+    text-align: justify;
+  }
+
+  .footer-logo {
+    margin: 0 auto 1rem auto;
+  }
+
+  .store-links {
+    align-items: center;
+  }
+
+  .store-btn {
+    width: 150px;
+    font-size: 0.85rem;
+  }
+
+  .social-links img {
+    height: 25px;
+    margin: 0 0.5rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
