@@ -604,6 +604,10 @@ footer {
     height: 100vh;
   }
 
+  .section-header img {
+    object-position: 85% center;
+  }
+
   .elementes-img h3 {
     margin: 3rem 0 0 3rem
   }
