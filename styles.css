@@ -566,7 +566,7 @@ footer {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 480px) {
   nav {
     flex-wrap: wrap;
     padding: 0.7rem 1rem;
@@ -808,5 +808,41 @@ footer {
 
   .footer-bottom {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-youtube p {
+    margin: 0 1.3rem 2rem 1.3rem;
+  }
+
+  .footer-address p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 330px) {
+
+  .elementes-img h1 {
+    font-size: 3rem;
+  }
+
+  .btn-img {
+    top: 68%;
+  }
+
+  .img-drone {
+    height: 170px;
+  }
+
+  .address h1 {
+    margin-bottom: 1rem;
+    margin-left: -2rem;
+    font-size: 1.5rem;
+  }
+
+  .address p {
+    font-size: 0.7rem;
+    margin: 0 0 0 4.5rem;
   }
 }
