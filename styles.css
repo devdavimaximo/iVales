@@ -1,3 +1,5 @@
+/* ==================== RESET E CONFIGURAÇÕES GERAIS ==================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,8 @@ body {
   background-color: #30241f;
   color: #f1f1f1;
 }
+
+/* ==================== NAVBAR ==================== */
 
 nav {
   font-size: 17px;
@@ -219,6 +223,8 @@ header {
   transition: 0.5s;
 }
 
+/* ==================== HERO SECTION ==================== */
+
 main {
   display: flex;
 }
@@ -278,6 +284,8 @@ main {
   z-index: 1;
 }
 
+/* ==================== LOCATION SECTION ==================== */
+
 .location {
   position: relative;
   box-sizing: border-box;
@@ -335,6 +343,8 @@ main {
   pointer-events: none;
   z-index: 0;
 }
+
+/* ==================== YOUTUBE SECTION ==================== */
 
 .youtube {
   position: relative;
@@ -443,6 +453,8 @@ main {
 .btn-yt {
   display: none;
 }
+
+/* ==================== FOOTER ==================== */
 
 footer {
   background-color: #1f1714;
@@ -566,6 +578,8 @@ footer {
   transition: all 0.3s ease;
 }
 
+/* ==================== RESPONSIVIDADE ==================== */
+
 @media (max-width: 576px) {
   nav {
     flex-wrap: wrap;
@@ -577,27 +591,28 @@ footer {
     display: flex;
   }
 
- .ul-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: #000000d7;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.2rem;
-  padding: 5rem 0 0 2rem;
-  transform: translateX(100%);
-  transition: transform 0.35s ease;
-  z-index: 10005;
-}
+  .ul-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #000000d7;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding: 5rem 0 0 2rem;
+    transform: translateX(100%);
+    transition: transform 0.35s ease, opacity 0.45s ease;
+    opacity: 0;
+    z-index: 10005;
+  }
 
-.ul-nav.active {
-  transform: translateX(0);
-}
-
+  .ul-nav.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
   .ul-nav li a {
     font-size: 1.1rem;
@@ -736,7 +751,7 @@ footer {
   .container-youtube p {
     max-width: 80%;
     font-size: 1rem;
-    margin:0 3rem 3rem 3rem;
+    margin: 0 3rem 3rem 3rem;
   }
 
   .youtube-desktop {
@@ -817,12 +832,11 @@ footer {
 }
 
 @media (max-width: 400px) {
-
   .location {
     height: 100vh;
   }
 
-   .img-drone {
+  .img-drone {
     height: 250px;
     width: 295px;
   }
@@ -838,9 +852,8 @@ footer {
   .container-youtube p {
     max-width: 90%;
     font-size: 1rem;
-    margin:0 3rem 3rem 3rem;
+    margin: 0 3rem 3rem 3rem;
   }
-
 }
 
 @media (max-width: 400px) {
@@ -876,4 +889,57 @@ footer {
     font-size: 0.7rem;
     margin: 0 0 0 4.5rem;
   }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 0.7rem 1rem;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .ul-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #000000d7;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding: 5rem 0 0 2rem;
+    transform: translateX(100%);
+    transition: transform 0.35s ease, opacity 0.45s ease;
+    opacity: 0;
+    z-index: 10005;
+  }
+
+  .ul-nav.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .ul-nav li a {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
 }
