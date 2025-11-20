@@ -407,15 +407,18 @@ main {
   border: 2px solid #f1f1f1;
   color: #f1f1f1;
   padding: 1rem;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
 }
 
 .container-youtube a:hover {
-  border: 2px solid #c5c3c3;
-  color: #c5c3c3;
-  transition: 0.5s;
+  border: 2px solid #111;
+  color: #111;
+  transition: 0.9s;
+  background-color: #f1f1f1c2;
+  
+
 }
 
 /* ==================== FOOTER ==================== */
