@@ -349,109 +349,73 @@ main {
 .youtube {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #30241f;
 }
 
-.central-borrao {
+.fundo-yt {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.logo-transparente {
-  position: absolute;
-  top: 2rem;
-  width: 40%;
-  transform: translateX(-5%);
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.02;
+  align-items: center;
+  height: 75%;
+  width: 75%;
   z-index: 0;
 }
 
 .container-youtube {
-  position: relative;
   z-index: 2;
 }
 
 .container-youtube h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
   font-style: italic;
   color: #fff;
-  text-align: center;
-  margin: 0;
-}
-
-.container-youtube p {
-  font-size: 1.2rem;
-  text-align: center;
-  font-weight: 200;
+  text-align: left;
+  margin: 7rem 0 0 7rem;
+  max-width: 50%;
 }
 
 .img-yt {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15rem;
-  position: relative;
   z-index: 2;
 }
 
-.youtube-desktop {
-  margin-left: -5rem;
-  height: 450px;
-  z-index: 10;
-  margin-top: -1rem;
-}
-
 .youtube-celular {
-  height: 330px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 420px;
   z-index: 10;
+  position: absolute;
+  right: 5rem;
   margin-top: 0;
 }
 
-.youtube-click {
-  height: 150px;
-  display: block;
-}
-
-.link-img {
+.container-youtube a {
   position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  z-index: 3;
+  top: 70%;
+  left: 8%;
+  transform: translate(0 -50%);
+  z-index: 2;
 }
 
-.click-img {
-  position: absolute;
-  left: 37%;
-  top: 15%;
-  height: 80px;
-  z-index: 3;
-  filter: brightness(0) invert(90%);
+.container-youtube a {
+  text-align: center;
+  width: 250px;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.element-youtube {
-  position: absolute;
-  bottom: 5%;
-  width: 450px;
-  z-index: 0;
-}
-
-.btn-yt {
-  display: none;
+.container-youtube a:hover {
+  border: 2px solid #c5c3c3;
+  color: #c5c3c3;
+  transition: 0.5s;
 }
 
 /* ==================== FOOTER ==================== */
@@ -939,7 +903,222 @@ footer {
   .menu-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
+
+  .elementes-img h1 {
+    font-size: 5rem;
+    margin: 2rem 5rem 0.5rem 5rem;
+  }
+
+  .elementes-img p {
+    display: none;
+  }
+
+  .btn-img {
+    left: 50%;
+    top: 80%;
+  }
+
+    .verse {
+      width: 100%;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .verse-text h2 {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+
+  .verse-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .logo-element {
+    width: 150px;
+    position: absolute;
+    opacity: 0.05;
+  }
+
+   .location {
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 0;
+  }
+
+  .img-drone {
+    margin: 1rem 3rem;
+    width: 85%;
+    height: auto;
+  }
+
+  .container-img-drone p {
+    font-size: 1rem;
+  }
+
+  .address h1 {
+    font-size: 2.3rem;
+    margin: 7rem 0 2rem 0;
+  }
+
+  .address {
+    margin-bottom: 3rem;
+  }
+
+  .address p {
+    font-size: 0.9rem;
+    margin: 0.5rem 6.5rem;
+    border-bottom: 1px solid #c2a58c;
+    text-align: justify;
+    width: 80%;
+  }
+
+   .youtube {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .logo-transparente {
+    display: none;
+  }
+
+  .container-youtube h1 {
+    margin: 3rem 0 0.3rem;
+    font-size: 2rem;
+  }
+
+  .container-youtube p {
+    max-width: 80%;
+    font-size: 1rem;
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  .youtube-desktop {
+    display: none;
+  }
+
+  .youtube-celular {
+    display: block;
+    width: 90%;
+    height: 350px;
+  }
+
+  .click-img,
+  .youtube-click {
+    display: none;
+  }
+
+  .element-youtube {
+    display: none;
+  }
+
+  .btn-yt {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .btn-yt:hover {
+    transition: 0.3s;
+    border: 2px solid #b8b6b6;
+    color: #f1f1f1;
+  }
+
+   footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-address p {
+    text-align: justify;
+  }
+
+  .footer-logo {
+    margin: 0 auto 1rem auto;
+  }
+
+  .store-links {
+    align-items: center;
+  }
+
+  .store-btn {
+    width: 150px;
+    font-size: 0.85rem;
+  }
+
+  .social-links img {
+    height: 25px;
+    margin: 0 0.5rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 0.7rem 1rem;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .ul-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #000000d7;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding: 5rem 0 0 2rem;
+    transform: translateX(100%);
+    transition: transform 0.35s ease, opacity 0.45s ease;
+    opacity: 0;
+    z-index: 10005;
+  }
+
+  .ul-nav.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .ul-nav li a {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
